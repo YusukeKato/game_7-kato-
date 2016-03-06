@@ -2,11 +2,15 @@
 /* action_1 */
 /* YusukeKato */
 /* 2016.3.4 */
-/* 2016.3.4 */
+/* 2016.3.6 */
 
 #include <stdio.h>
+#include "func.h"
 
-void action_1(void)
+int action_1(void)
 {
-	printf("action_1\n");
+	printf("\n\n action_1\n\n");
+	enterkey();
+	
+	return 0;
 }

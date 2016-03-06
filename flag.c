@@ -2,44 +2,16 @@
 /* flag.c */
 /* YusukeKato */
 /* 2016.3.4 */
-/* 2016.3.4 */
+/* 2016.3.6 */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "func.h"
 
-void flag(void)
+int flag(void)
 {
-	FILE *fp;
-	struct person player;
+	printf("\n\n flag.c\n\n");
+	enterkey();
 	
-	for(;;)
-	{
-		fp=fopen("game_7_save_date.txt","r");
-		fscanf(fp,"%s %d %d %d %d %d %d\n",
-			player.name,
-			&player.level,
-			&player.hp,
-			&player.attack,
-			&player.defense,
-			&player.money,
-			&player.flag );
-		fclose(fp);
-	
-		switch(player.flag)
-		{
-			case 1:
-			story_1();
-			break;
-			case 2:
-			story_2();
-			break;
-			case 3:
-			story_3();
-			break;
-			case 4:
-			printf("\n\n èIóπÇµÇ‹Ç∑\n\n");
-			default:
-			break;
-		}
-	}
+	return 0;
 }

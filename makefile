@@ -2,8 +2,8 @@
 # target : main.exe
 all : main.exe
 
-main.exe:   main.obj func.obj make_char.obj story_1.obj story_2.obj story_3.obj battle_1.obj shop_1.obj menu.obj action_1.obj shooting_1.obj help.obj inn.obj main_1.obj flag.obj enterkey.obj save_write.obj save_read.obj
-		bcc32 -emain.exe main.obj func.obj make_char.obj story_1.obj story_2.obj story_3.obj battle_1.obj shop_1.obj menu.obj action_1.obj shooting_1.obj help.obj inn.obj main_1.obj flag.obj enterkey.obj save_write.obj save_read.obj
+main.exe:   main.obj func.obj make_char.obj story_1.obj story_2.obj story_3.obj battle_1.obj shop_1.obj menu.obj action_1.obj shooting_1.obj help.obj inn.obj main_1.obj flag.obj enterkey.obj save_write.obj save_read.obj level_up.obj
+		bcc32 -emain.exe main.obj func.obj make_char.obj story_1.obj story_2.obj story_3.obj battle_1.obj shop_1.obj menu.obj action_1.obj shooting_1.obj help.obj inn.obj main_1.obj flag.obj enterkey.obj save_write.obj save_read.obj level_up.obj
 
 main.obj: main.c func.h
 		bcc32 -c main.c
@@ -58,3 +58,6 @@ save_write.obj: save_write.c
 		
 save_read.obj: save_read.c
 		bcc32 -c save_read.c
+		
+level_up.obj: level_up.c
+		bcc32 -c level_up.c
